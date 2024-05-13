@@ -1,4 +1,4 @@
-piVersion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
@@ -6,7 +6,7 @@ metadata:
   name: myapp
 spec:
   progressDeadlineSeconds: 600
-  replicas: 2
+  replicas: 1
   revisionHistoryLimit: 10
   selector:
     matchLabels:
@@ -25,7 +25,7 @@ spec:
       containers:
       - image: nginx
         imagePullPolicy: IfNotPresent
-        name: humastory2
+        name: test
         resources: {}
 ---
 apiVersion: v1
@@ -45,4 +45,3 @@ spec:
   type: NodePort
 status:
   loadBalancer: {}
-
