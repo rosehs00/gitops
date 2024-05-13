@@ -23,7 +23,7 @@ spec:
         app: myapp
     spec:
       containers:
-      - image: rosehs00/humastory2:v1
+      - image: nginx
         imagePullPolicy: IfNotPresent
         name: humastory2
         resources: {}
