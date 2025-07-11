@@ -21,9 +21,10 @@ spec:
       creationTimestamp: null
       labels:
         app: myapp
+      namespace: class
     spec:
       containers:
-      - image: nginx
+        - image: rosehs00/app:v1
         imagePullPolicy: IfNotPresent
         name: test
         resources: {}
