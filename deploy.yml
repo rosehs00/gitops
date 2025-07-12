@@ -25,7 +25,7 @@ spec:
       namespace: myapp
     spec:
       containers:
-        - image: rosehs00/app:v1
+      - image: rosehs00/app:v1
         imagePullPolicy: IfNotPresent
         name: test
         resources: {}
