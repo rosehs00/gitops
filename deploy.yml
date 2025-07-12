@@ -4,10 +4,9 @@ metadata:
   labels:
     app: myapp
   name: myapp
-  namespace: myapp
 spec:
   progressDeadlineSeconds: 600
-  replicas: 4
+  replicas: 2
   revisionHistoryLimit: 10
   selector:
     matchLabels:
@@ -22,7 +21,6 @@ spec:
       creationTimestamp: null
       labels:
         app: myapp
-      namespace: myapp
     spec:
       containers:
       - image: rosehs00/app:v1
